@@ -5,11 +5,12 @@
   <body>
     <div>
       <article>
-      <header> <h2>From Speaker Verification to Multispeaker Speech Synthesis, Deep Transfer with Feedback Constraint</h2> </header>
+      <header> <h2>Many-to-Many Voice Conversion using Dual Speaker Embedding based Seq-to-Seq Acoustic Modeling with multi-speaker TTS  based data augmentation</h2> </header>
     </article>
     <p><b>Paper:</b> <a href="">Submitted to Interspeech 2020</a></p>
-    <p><b>Authors</b>: Zexin Cai, Chuxiong Zhang, Ming Li</p>
-    <div><b>Abstract:</b>  High-fidelity speech can be synthesized by end-to-end text-to-speech models in recent years. However, accessing and controlling speech attributes such as speaker identity, prosody, and emotion in a text-to-speech system remains a challenge. This paper presents a system involving feedback constraint for multispeaker speech synthesis. We manage to enhance the knowledge transfer from the speaker verification to the speech synthesis by engaging the speaker verification network. The constraint is taken by an added loss related to the speaker identity, which is centralized to improve the speaker similarity between the synthesized speech and its natural reference audio. The model is trained and evaluated on publicly available datasets. Experimental results, including visualization on speaker embedding space, show significant improvement in terms of speaker identity cloning in the spectrogram level. </div>
+    <p><b>Authors</b>: Yaogen Yang, Zexin Cai, Ming Li</p>
+    <div><b>Abstract:</b>  The sequence-to-sequence voice conversion for generating high-fidelity speech has been confirmed in recent works. However, the sequence-to-sequence voice conversion requires a large amount of parallel data, which is impractical to obtain. This paper describe a many-to-many voice conversion model using conditional sequence-to-sequence neural network framework. The network maps a source speaker Mel-spectrogram directly to target speaker Mel-spectrogram with utilizing dual speaker embedding representation. An end-to-end multi-speaker TTS is used to synthesize parallel utterance for voice conversion training to solve limitation of parallel data. We manage to discriminate source and target speaker identity with using speaker encoder generates a fixed-dimensional embedding vector.
+A WaveRNN-based vocoder network that converts the Mel-spectrogra into time-domain waveform. The experimental results confirm that the proposed method outperformed one-to-many baseline system in Voice Conversion Challenge 2020 corpus. </div>
 
     C
     <table>
