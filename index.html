@@ -14,30 +14,24 @@ A WaveRNN-based vocoder network that converts the Mel-spectrogra into time-domai
   <p>&nbsp;</p>
   <hr />
   <h3>&nbsp;</h3>
-   The 'S' and 'T' in the first digit denote 'source' and 'target', respectively.
- 12 The 'E', 'F', 'G' and 'M' in the second digit denote 'English', 'Finnish', 'German' and 'Mandarin', respectively.
- 13 The 'M' and 'F' in the third digit indicate 'male' and 'female', respectively.
+    We select a sentence, which is "There are many examples of this in France", for test before the VCC2020 evelation data  is released.
     
+     Task1 
     <table>
       <thead>
-      <tr></tr>  <tr></tr>  <tr></tr>  <tr></tr>  <tr></tr>
+      <tr></tr>  <tr></tr>  <tr></tr>
       <tr>
-        <th> Ground truth </th> <th> Baseline </th> <th> Baseline - Text Indep </th>  <th> FC - Text Dep </th> <th> FC - Text Indep </th>
-      </tr>
+        <th> source speaker speech </th> <th> converted speech</th> <th> target speaker speech </th>  
     </thead><tbody>
     <tr></tr>  <tr></tr><tr></tr>  <tr></tr>
     <tr>
-      <td colspan="5"><span><b>VCTK Test Set</b></span></td>
+      <td colspan="5"><span><b>SEF1-to-SEF2</b></span></td>
     </tr>
     <tr>
-      <td colspan="5"><span>p225: we have seen a copy of the report. </span></td>
-    </tr>
-    <tr>
-      <td><audio controls=""><source src="speech_sample/vctk_test/org_p225_135.wav" type="audio/wav"></audio></td>
+      <td><audio controls=""><source src="lj/SEF1-E10052-SEF2.wav" type="audio/wav"></audio></td>
       <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_p225_135.wav" type="audio/wav"></audio></td>
       <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_ran_p225_135.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_p225_135.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_ran_p225_135.wav" type="audio/wav"></audio></td>
+      
     </tr>
     <tr>
       <td colspan="5"><span>p231: tourism is a vital industry for scotland. </span></td>
@@ -46,8 +40,7 @@ A WaveRNN-based vocoder network that converts the Mel-spectrogra into time-domai
       <td><audio controls=""><source src="speech_sample/vctk_test/org_p231_255.wav" type="audio/wav"></audio></td>
       <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_p231_255.wav" type="audio/wav"></audio></td>
       <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_ran_p231_255.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_p231_255.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_ran_p231_255.wav" type="audio/wav"></audio></td>
+    
     </tr>
     <tr>
       <td colspan="5"><span>p340: He had been surprised by the local reaction. </span></td>
@@ -56,8 +49,7 @@ A WaveRNN-based vocoder network that converts the Mel-spectrogra into time-domai
       <td><audio controls=""><source src="speech_sample/vctk_test/org_p340_240.wav" type="audio/wav"></audio></td>
       <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_p340_240.wav" type="audio/wav"></audio></td>
       <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_ran_p340_240.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_p340_240.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_ran_p340_240.wav" type="audio/wav"></audio></td>
+     
     </tr>
     <tr>
       <td colspan="5"><span>p360: There is an ongoing problem with this company. </span></td>
@@ -66,8 +58,7 @@ A WaveRNN-based vocoder network that converts the Mel-spectrogra into time-domai
       <td><audio controls=""><source src="speech_sample/vctk_test/org_p360_175.wav" type="audio/wav"></audio></td>
       <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_p360_175.wav" type="audio/wav"></audio></td>
       <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_ran_p360_175.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_p360_175.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_ran_p360_175.wav" type="audio/wav"></audio></td>
+     
     </tr>
     <tr>
       <td colspan="5"><span>p361: Cost is a factor, but not the only one.</span></td>
@@ -76,8 +67,7 @@ A WaveRNN-based vocoder network that converts the Mel-spectrogra into time-domai
       <td><audio controls=""><source src="speech_sample/vctk_test/org_p361_119.wav" type="audio/wav"></audio></td>
       <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_p361_119.wav" type="audio/wav"></audio></td>
       <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_ran_p361_119.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_p361_119.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_ran_p361_119.wav" type="audio/wav"></audio></td>
+     
     </tr>
     <tr>
       <td colspan="5"><span>p363: We are not commenting at the moment.</span></td>
@@ -86,8 +76,7 @@ A WaveRNN-based vocoder network that converts the Mel-spectrogra into time-domai
       <td><audio controls=""><source src="speech_sample/vctk_test/org_p363_074.wav" type="audio/wav"></audio></td>
       <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_p363_074.wav" type="audio/wav"></audio></td>
       <td><audio controls=""><source src="speech_sample/vctk_test/syn_unjl_ran_p363_074.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_p363_074.wav" type="audio/wav"></audio></td>
-      <td><audio controls=""><source src="speech_sample/vctk_test/syn_jl_ran_p363_074.wav" type="audio/wav"></audio></td>
+      
     </tr>
     <tr>
       <td colspan="5"><span>p364: I love you so very much.</span></td>
@@ -116,8 +105,6 @@ A WaveRNN-based vocoder network that converts the Mel-spectrogra into time-domai
   </tbody>
 </table>
 
-<div> <img src="vctk_textdep_cmp.png" style="height:35%;"> </div>
-<p><i> Speaker embedding visualization for VCTK test set. (a) baseline &amp; text-dependent speaker embedding; (b) FC &amp; text-dependent speaker embedding; (c) baseline &amp; text-independent speaker embedding; (d) FC &amp; text-independent speaker embedding; </i></p>
 
 
 <table>
@@ -251,82 +238,6 @@ A WaveRNN-based vocoder network that converts the Mel-spectrogra into time-domai
 <td><audio controls=""><source src="speech_sample/librispeech/syn_jl_ran_7245-104890-0063_02.wav" type="audio/wav"></audio></td>
 </tr>
 
-</tbody>
-</table>
-
-<div> <img src="lib_textdep_cmp.png" style="height:35%;"> </div>
-<p><i> Speaker embedding visualization for Librispeech test set. (a) baseline &amp; text-dependent speaker embedding; (b) FC &amp; text-dependent speaker embedding; (c) baseline &amp; text-independent speaker embedding; (d) FC &amp; text-independent speaker embedding; </i></p>
-
-
-
-
-
-<table>
-  <thead>
-  <tr></tr>  <tr></tr>  <tr></tr>  <tr></tr>  <tr></tr>
-  <tr>
-  <td colspan="5"><span><b>Cross-lingual Voice Cloning</b></span></td>
-  </tr>
-  <tr>
-    <th> Finnish Female </th> <th> Finnish Male </th> <th> German Female </th>  <th> German Male </th> <th> Mandarin Female </th> <th> Mandarin Male </th>
-  </tr>
-</thead>
-<tbody>
-
-
-<tr>
-  <td colspan="5"><span><b>Reference audios</b></span></td>
-</tr>
-
-<tr>
-  <td><audio controls=""><source src="speech_sample/crossLing/F10015.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/F10019.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/G10030.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/G10065.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/M10001.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/M10025.wav" type="audio/wav"></audio></td>
-</tr>
-<tr>
-  <td colspan="5"><span>Synthesized Results</span></td>
-</tr>
-<tr>
-  <td colspan="5"><span>The problems I mentioned are not insurmountable.</span></td>
-</tr>
-<tr>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TFF_0_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TFM_0_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TGF_0_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TGM_0_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TMF_0_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TMM_0_.wav" type="audio/wav"></audio></td>
-</tr>
-<tr>
-  <td colspan="5"><span>There is a connection between all of this. </span></td>
-</tr>
-<tr>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TFF_11_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TFM_11_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TGF_11_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TGM_11_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TMF_11_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TMM_11_.wav" type="audio/wav"></audio></td>
-</tr>
-<tr>
-  <td colspan="5"><span>We'll get to the new product line later.</span></td>
-</tr>
-<tr>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TFF_16_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TFM_16_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TGF_16_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TGM_16_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TMF_16_.wav" type="audio/wav"></audio></td>
-  <td><audio controls=""><source src="speech_sample/crossLing/vcc2020_TMM_16_.wav" type="audio/wav"></audio></td>
-</tr>
-<tr></tr>  <tr></tr><tr></tr>  <tr></tr>
-
-
-</tbody>
-</table>
 
 </div>
 
